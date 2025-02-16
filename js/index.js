@@ -63,14 +63,3 @@ if (window.Worker) {
     console.log('Message received from worker', e.data);
   };
 }
-
-self.onmessage = function(e) {
-  if (e.data === 'start') {
-    // Realiza tareas intensivas en cálculo aquí
-    let result = 0;
-    for (let i = 0; i < 1000000000; i++) {
-      result += i;
-    }
-    self.postMessage(result);
-  }
-};
