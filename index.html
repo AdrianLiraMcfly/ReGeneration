@@ -8,29 +8,38 @@
     <!-- Favicon optimizado (usar WebP si es posible) -->
     <link rel="shortcut icon" href="assets/crown_logo_white.webp" id="favicon" />
 
-    <!-- Carga de CSS no bloqueante -->
-    <link rel="stylesheet" href="css/styles.css" media="print" onload="this.onload=null;this.media='all';" />
-
     <!-- Preconexión para mejorar tiempos de carga -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- FontAwesome optimizado usando CDN y con integridad -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-          integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+2hb5g6eZwC8rfz7h5E4I1qJ2KmF3K9LZ6h0U4+"
+    <!-- Google Fonts optimizado -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Bebas+Neue&display=swap" />
+
+    <!-- Carga de CSS no bloqueante -->
+    <link rel="stylesheet" href="css/styles.css" media="print" onload="this.onload=null;this.media='all';" />
+
+    <!-- FontAwesome optimizado usando CDN con integridad -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+2hb5g6eZwC8rfz7h5E4I1qJ2KmF3K9LZ6h0U4+" 
           crossorigin="anonymous" />
 
-    <!-- Plugins optimizados con defer para mejorar el tiempo de carga -->
+    <!-- Plugins optimizados con carga diferida -->
     <link rel="stylesheet" href="plugins/aos/aos.css" />
     <link rel="stylesheet" href="plugins/fullPage.js-master/fullpage.min.css" />
 
     <title>ReGeneration</title>
 
-    <!-- Scripts externos con carga diferida -->
+    <!-- Scripts diferidos para mejorar el rendimiento -->
     <script src="plugins/aos/aos.js" defer></script>
     <script src="plugins/fullPage.js-master/fullpage.min.js" defer></script>
+
+    <!-- Lazy Load para imágenes -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+
+    <!-- Preload de imágenes críticas -->
+    <link rel="preload" as="image" href="assets/crown_logo_white.webp" />
 </head>
+
 
   <body class="scroll-y-none">
     <!-- <nav class="navbar navbar-dark p-sticky">
