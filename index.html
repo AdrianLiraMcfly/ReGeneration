@@ -5,12 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="assets/crown_logo_white.png" id="favicon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="shortcut icon" href="assets/crown_logo_white.webp" id="favicon" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
@@ -20,13 +16,11 @@
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.1.0/css/all.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link href="plugins/aos/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="plugins/fullPage.js-msater/fullpage.min.css" />
-
+    <link rel="stylesheet" href="css/styles.css" media="print" onload="this.onload=null;this.media='all';" />
+    <script src="plugins/aos/aos.js" defer></script>
+    <script src="plugins/fullPage.js-msater/fullpage.min.js" defer></script>
     <title>ReGeneration</title>
   </head>
-
   <body class="scroll-y-none">
     <!-- <nav class="navbar navbar-dark p-sticky">
       <div class="" id="span_icon">
@@ -75,7 +69,7 @@
           />
         </div> -->
 
-        <div class="p-relative d-flex justify-content-center fade_in" id="hero" loading="lazy"></div>
+        <div class="p-relative d-flex justify-content-center" id="hero" loading="lazy">
           <img
             src="assets/main-logo.png"
             alt="main-logo-royal"
@@ -84,15 +78,16 @@
             width="300"
             height="200"
           />
-            <img src="assets/arroba-clara.png" alt="arroba" class="img-sm" loading="lazy" width="300" height="200"/>
-            <img
+          <img src="assets/arroba-clara.png" alt="arroba" class="img-sm" loading="lazy" width="300" height="200"/>
+          <img
             src="assets/logotipo.png"
             alt="logotipo-molly-burguers"
-            class="img-hero img_right_left"
+            class="img-hero"
             id="img_hero_2"
+            loading="lazy"
             width="300"
             height="200"
-            />
+          />
         </div>
       </section>
 
