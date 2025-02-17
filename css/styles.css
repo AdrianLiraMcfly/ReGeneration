@@ -627,6 +627,7 @@ hr.separator-sm {
    align-items: center;
    justify-content: center;
    font-weight: bolder;
+   font-display: swap;
 }
 .hero h1 {
    font-size: 30vw;
@@ -986,6 +987,7 @@ p {
    font-family: 'Bebas Neue', cursive;
    font-size: 7vw;
    line-height: 8vw;
+   font-display: swap;
 }
 @media screen and (max-width: 2560px) {
    /* #section_into_soil { height: 290vh; } */
