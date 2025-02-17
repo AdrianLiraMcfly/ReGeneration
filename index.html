@@ -5,31 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon optimizado (usar WebP si es posible) -->
+    <!-- Favicon optimizado -->
     <link rel="shortcut icon" href="assets/crown_logo_white.webp" id="favicon" />
 
     <!-- Preconexión para mejorar tiempos de carga -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Google Fonts optimizado -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Bebas+Neue&display=swap" />
+    
+    <!-- Carga manual de Google Fonts para evitar bloqueo -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Bebas+Neue&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Bebas+Neue&display=swap" media="print" onload="this.onload=null;this.media='all';" />
 
     <!-- Carga de CSS no bloqueante -->
+    <link rel="preload" as="style" href="css/styles.css" />
     <link rel="stylesheet" href="css/styles.css" media="print" onload="this.onload=null;this.media='all';" />
 
-    <!-- FontAwesome optimizado usando CDN con integridad -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-          integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+2hb5g6eZwC8rfz7h5E4I1qJ2KmF3K9LZ6h0U4+" 
-          crossorigin="anonymous" />
+    <!-- FontAwesome optimizado descargado localmente para evitar bloqueos -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome.min.css" media="print" onload="this.onload=null;this.media='all';" />
 
-    <!-- Plugins optimizados con carga diferida -->
-    <link rel="stylesheet" href="plugins/aos/aos.css" />
-    <link rel="stylesheet" href="plugins/fullPage.js-master/fullpage.min.css" />
+    <!-- Plugins optimizados -->
+    <link rel="stylesheet" href="plugins/aos/aos.css" media="print" onload="this.onload=null;this.media='all';" />
+    <link rel="stylesheet" href="plugins/fullPage.js-master/fullpage.min.css" media="print" onload="this.onload=null;this.media='all';" />
 
     <title>ReGeneration</title>
 
-    <!-- Scripts diferidos para mejorar el rendimiento -->
+    <!-- Scripts diferidos -->
     <script src="plugins/aos/aos.js" defer></script>
     <script src="plugins/fullPage.js-master/fullpage.min.js" defer></script>
 
@@ -39,6 +38,7 @@
     <!-- Preload de imágenes críticas -->
     <link rel="preload" as="image" href="assets/crown_logo_white.webp" />
 </head>
+
 
 
   <body class="scroll-y-none">
@@ -89,20 +89,20 @@
           />
         </div> -->
 
-        <div class="p-relative d-flex justify-content-center" id="hero" loading="lazy">
-          <img
+        <div class="p-relative d-flex justify-content-center fade_in" id="hero" loading="lazy"></div>
+            <img
             src="assets/main-logo.png"
             alt="main-logo-royal"
             class="img-hero"
             id="img_hero_1"
             width="300"
             height="200"
-          />
+            />
           <img src="assets/arroba-clara.png" alt="arroba" class="img-sm" loading="lazy" width="300" height="200"/>
           <img
             src="assets/logotipo.png"
             alt="logotipo-molly-burguers"
-            class="img-hero"
+            class="img-hero img_right_left"
             id="img_hero_2"
             loading="lazy"
             width="300"
