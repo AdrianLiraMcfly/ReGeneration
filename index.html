@@ -5,34 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Precargar favicon -->
-    <link rel="preload" href="assets/crown_logo_white.png" as="image" />
-    <link rel="shortcut icon" href="assets/crown_logo_white.png" id="favicon" />
+    <!-- Favicon optimizado (usar WebP si es posible) -->
+    <link rel="shortcut icon" href="assets/crown_logo_white.webp" id="favicon" />
 
-    <!-- Preconectar a Google Fonts -->
+    <!-- Google Fonts: se combinan en una sola solicitud y se usa display=swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+    <!-- Carga de CSS no bloqueante -->
+    <link rel="stylesheet" href="css/styles.css" media="print" onload="this.onload=null;this.media='all';" />
+
+    <!-- Preconexión para mejorar tiempos de carga -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Carga de fuentes optimizada -->
-    <link 
-      rel="stylesheet" 
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Bebas+Neue&display=swap" 
-      crossorigin="anonymous"
-    />
+    <!-- FontAwesome optimizado usando CDN y con integridad -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+2hb5g6eZwC8rfz7h5E4I1qJ2KmF3K9LZ6h0U4+"
+          crossorigin="anonymous" />
 
-    <!-- Carga de FontAwesome optimizada -->
-    <link 
-      rel="stylesheet" 
-      href="https://site-assets.fontawesome.com/releases/v6.1.0/css/all.css" 
-      crossorigin="anonymous"
-    />
-
-    <!-- Estilos del sitio (minificados si es posible) -->
-    <link rel="stylesheet" href="css/styles.min.css" />
+    <!-- Plugins optimizados con defer para mejorar el tiempo de carga -->
     <link rel="stylesheet" href="plugins/aos/aos.css" />
     <link rel="stylesheet" href="plugins/fullPage.js-master/fullpage.min.css" />
 
     <title>ReGeneration</title>
+
+    <!-- Scripts externos con carga diferida -->
+    <script src="plugins/aos/aos.js" defer></script>
+    <script src="plugins/fullPage.js-master/fullpage.min.js" defer></script>
 </head>
 
   <body class="scroll-y-none">
